@@ -12,7 +12,7 @@ class RAG:
         
         genai.configure(api_key=gem_key)
         
-        self.gem_model = genai  # Assign the module itself to access its methods
+        self.gem_model = genai
         
         self.psg, self.idx = self.load_idx_data(data_path)
     
@@ -28,8 +28,8 @@ class RAG:
     
     def load_data(self, data_path):
         pdf_files = [
-            f"{data_path}/placements.pdf",
-            f"{data_path}/si.pdf"
+            f"placements.pdf",
+            f"si.pdf"
         ]
         psg = []
         for k in pdf_files:
@@ -81,7 +81,6 @@ class RAG:
 def main():
     st.title("RAG Model Query Answering")
     
-    data_path = "/home/robosobo/ML_code/Datasets"
     ret_model_name = "sentence-transformers/all-MiniLM-L6-v2"
     gem_key = "AIzaSyDL2cwR__51RddxvF8bG0oh_AK4uKwl-uM"
   
