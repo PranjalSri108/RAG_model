@@ -44,3 +44,6 @@ The system initializes with specified model names and data paths. Users can then
 4. Run the script and start querying!
 
 Note: Ensure you have the necessary permissions and API keys to use Google's Generative AI service.
+
+![alt text](https://github.com/PranjalSri108/RAG_model/blob/main/Streamlit_App.png?raw=true)
+
