@@ -11,7 +11,7 @@ class RAG:
         
         genai.configure(api_key=gem_key)
         
-        self.gem_model = genai  # Assign the module itself to access its methods
+        self.gem_model = genai 
         
         self.psg, self.idx = self.load_idx_data(data_path)
     
